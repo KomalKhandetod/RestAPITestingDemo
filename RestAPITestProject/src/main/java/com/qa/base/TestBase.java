@@ -13,6 +13,7 @@ public class TestBase {
 	public int RESPONSE_STATUS_CODE_500 = 500;
 	public int RESPONSE_STATUS_CODE_401 = 401;
 	public int RESPONSE_STATUS_CODE_201 = 201;
+	public int RESPONSE_STATUS_CODE_204 = 204;
 	
 
 	public TestBase() {

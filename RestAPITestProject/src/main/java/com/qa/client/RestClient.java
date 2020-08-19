@@ -6,6 +6,7 @@ import java.util.Map;
 
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
@@ -55,7 +56,8 @@ public class RestClient {
 		return closeableHttpResponse;
 	}
 
-	public CloseableHttpResponse put(String url, String entityString, HashMap<String, String> headerMap) throws ClientProtocolException, IOException {
+	public CloseableHttpResponse put(String url, String entityString, HashMap<String, String> headerMap)
+			throws ClientProtocolException, IOException {
 		CloseableHttpClient httpClient = HttpClients.createDefault();// Creates default http Client
 		HttpPut httpPut = new HttpPut(url);
 		httpPut.setEntity(new StringEntity(entityString));
@@ -68,6 +70,19 @@ public class RestClient {
 		CloseableHttpResponse closeableHttpResponse = httpClient.execute(httpPut);
 		return closeableHttpResponse;
 	}
-	
-	
+
+	public CloseableHttpResponse delete(String url, HashMap<String, String> headerMap)
+			throws ClientProtocolException, IOException {
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		HttpDelete httpDelete = new HttpDelete(url);
+
+		// To pass headers with API request
+		for (Map.Entry<String, String> entry : headerMap.entrySet()) {
+			httpDelete.addHeader(entry.getKey(), entry.getValue());
+		}
+
+		CloseableHttpResponse closeableHttpResponse = httpClient.execute(httpDelete);
+		return closeableHttpResponse;
+
+	}
 }
