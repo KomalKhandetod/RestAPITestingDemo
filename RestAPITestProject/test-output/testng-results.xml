@@ -1,21 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-19T15:24:33 IST" name="Default suite" finished-at="2020-08-19T15:24:34 IST" duration-ms="1706">
+  <suite started-at="2020-08-19T16:11:52 IST" name="Rest API Testing with Http Client" finished-at="2020-08-19T16:12:01 IST" duration-ms="8737">
     <groups>
     </groups>
-    <test started-at="2020-08-19T15:24:33 IST" name="Default test" finished-at="2020-08-19T15:24:34 IST" duration-ms="1706">
-      <class name="com.qa.test.DeleteAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.DeleteAPITest@79efed2d]" started-at="2020-08-19T15:24:33 IST" name="setup" finished-at="2020-08-19T15:24:33 IST" duration-ms="14" status="PASS">
+    <test started-at="2020-08-19T16:11:52 IST" name="Rest API Tests" finished-at="2020-08-19T16:12:01 IST" duration-ms="8737">
+      <class name="com.qa.test.PostAPITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.PostAPITest@5276e6b0]" started-at="2020-08-19T16:11:52 IST" name="setup" finished-at="2020-08-19T16:11:52 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDeleteAPITest()[pri:0, instance:com.qa.test.DeleteAPITest@79efed2d]" started-at="2020-08-19T15:24:33 IST" name="verifyDeleteAPITest" finished-at="2020-08-19T15:24:34 IST" duration-ms="1634" status="PASS">
+        <test-method signature="postAPITest()[pri:0, instance:com.qa.test.PostAPITest@5276e6b0]" started-at="2020-08-19T16:11:58 IST" name="postAPITest" finished-at="2020-08-19T16:11:59 IST" duration-ms="1489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAPITest -->
+      </class> <!-- com.qa.test.PostAPITest -->
+      <class name="com.qa.test.DeleteAPITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.DeleteAPITest@647fd8ce]" started-at="2020-08-19T16:12:00 IST" name="setup" finished-at="2020-08-19T16:12:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyDeleteAPITest()[pri:0, instance:com.qa.test.DeleteAPITest@647fd8ce]" started-at="2020-08-19T16:12:00 IST" name="verifyDeleteAPITest" finished-at="2020-08-19T16:12:01 IST" duration-ms="1032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteAPITest -->
       </class> <!-- com.qa.test.DeleteAPITest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.qa.test.GetAPITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:52 IST" name="setup" finished-at="2020-08-19T16:11:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyGetAPIWithoutHeadersTest()[pri:1, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:52 IST" name="verifyGetAPIWithoutHeadersTest" finished-at="2020-08-19T16:11:54 IST" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAPIWithoutHeadersTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:54 IST" name="setup" finished-at="2020-08-19T16:11:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyStatusCodeTest()[pri:2, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:54 IST" name="verifyStatusCodeTest" finished-at="2020-08-19T16:11:54 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCodeTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:54 IST" name="setup" finished-at="2020-08-19T16:11:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyGetJSONResponseData()[pri:3, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:54 IST" name="verifyGetJSONResponseData" finished-at="2020-08-19T16:11:56 IST" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetJSONResponseData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:56 IST" name="setup" finished-at="2020-08-19T16:11:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySingleValuesJSONResponseTest()[pri:4, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:56 IST" name="verifySingleValuesJSONResponseTest" finished-at="2020-08-19T16:11:56 IST" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleValuesJSONResponseTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:56 IST" name="setup" finished-at="2020-08-19T16:11:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyJSONArrayvalues()[pri:5, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:56 IST" name="verifyJSONArrayvalues" finished-at="2020-08-19T16:11:57 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJSONArrayvalues -->
+        <test-method signature="verifyGetAPITestWithHeaders()[pri:6, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:57 IST" name="verifyGetAPITestWithHeaders" finished-at="2020-08-19T16:11:58 IST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetAPITestWithHeaders -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.GetAPITest@6193932a]" started-at="2020-08-19T16:11:57 IST" name="setup" finished-at="2020-08-19T16:11:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.qa.test.GetAPITest -->
+      <class name="com.qa.test.PutAPITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.PutAPITest@71b1176b]" started-at="2020-08-19T16:11:52 IST" name="setup" finished-at="2020-08-19T16:11:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="putAPTTest()[pri:0, instance:com.qa.test.PutAPITest@71b1176b]" started-at="2020-08-19T16:11:59 IST" name="putAPTTest" finished-at="2020-08-19T16:12:00 IST" duration-ms="1026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putAPTTest -->
+      </class> <!-- com.qa.test.PutAPITest -->
+    </test> <!-- Rest API Tests -->
+  </suite> <!-- Rest API Testing with Http Client -->
 </testng-results>
